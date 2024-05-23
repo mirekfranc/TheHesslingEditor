@@ -119,7 +119,6 @@ ARCHIVE_FILES = \
  $(THE_DIR)/man2html.rex $(THE_DIR)/man2hv.rex $(THE_DIR)/makehtml.rex $(THE_DIR)/makehv.rex $(THE_DIR)/makedist.cmd $(THE_DIR)/tld2c.rex \
  $(THE_DIR)/THE*.spec $(THE_DIR)/the64.xpm $(THE_DIR)/images/*.png $(THE_DIR)/descrip.mms $(THE_DIR)/build.com \
  $(THE_DIR)/syntax/*.syntax \
- $(THE_DIR)/debian/compat $(THE_DIR)/debian/control $(THE_DIR)/debian/copyright $(THE_DIR)/debian/rules $(THE_DIR)/debian/changelog
 
 ################################################################################
 all:	$(THEBIN) the the.man THE_Help.txt
