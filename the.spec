@@ -2,7 +2,7 @@ Name: the
 Version: 3.4
 Release: 4
 Summary: The Hessling Editor
-License: GPLv2
+License: GPL-2.0-only
 Group: Applications/Editors
 Source: THE-3.3RC4.tar.gz
 URL: https://github.com/mirekfranc/TheHesslingEditor
@@ -61,6 +61,7 @@ install -b -D -m 644 syntax.the   %{buildroot}/%{_datadir}/THE/syntax.the
 %files
 %{_bindir}/the
 %doc %{_mandir}/man1/the.1.gz
+%{_datadir}/THE/
 %{_datadir}/THE/THE_Help.txt
 %{_datadir}/THE/append.the
 %{_datadir}/THE/comm.the
