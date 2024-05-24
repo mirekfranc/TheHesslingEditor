@@ -24,15 +24,17 @@ For more information on THE, visit http://hessling-editor.sourceforge.net/
 
 For more information on Rexx, visit http://www.rexxla.org
 
+This is ncurses version only build from https://github.com/mirekfranc/TheHesslingEditor
+
 %prep
 %setup -n THE-3.3RC4
 
 %build
-./configure --with-rexx=oorexx --with-ncurses
+./configure --with-rexx=oorexx --with-ncurses --prefix=/usr
 make
 
 %install
-install -b -D -m 755 the %{buildroot}/%{_bindir}/the
+install -b -D -m 755 nthe %{buildroot}/%{_bindir}/the
 gzip -f the.1
 install -b -D -m 644 the.1.gz %{buildroot}/%{_mandir}/man1/the.1.gz
 install -b -D -m 644 THE_Help.txt %{buildroot}/%{_datadir}/THE/THE_Help.txt
